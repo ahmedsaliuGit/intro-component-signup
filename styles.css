@@ -165,6 +165,7 @@ label {
 
   .desc-text {
     width: 90%;
+    padding-top: 1em;
   }
 
   .desc-text h2 {
