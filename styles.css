@@ -1,0 +1,180 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-mobile.png);
+  object-fit: fill;
+}
+
+main {
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+label {
+  width: 100%;
+  height: 50px;
+  display: block;
+  margin-bottom: 0.75em;
+  clear: both;
+  position: relative;
+}
+
+.desc {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 0 0 1.5em;
+}
+
+.desc-text {
+  padding: 2.1em 0 0;
+}
+
+.desc-text h2 {
+  font-size: 1.75rem;
+  line-height: 1.4em;
+}
+
+.desc-text p {
+  margin-top: -0.2em;
+}
+
+.form-section {
+  width: 100%;
+}
+
+.trial {
+  color: #fff;
+  padding: 1em 3em;
+  margin: 0 0 1.5em;
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  box-shadow: 0px 8px rgba(0, 0, 0, 20%);
+}
+
+.intro-form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px rgba(0, 0, 0, 20%);
+  padding: 1.5em;
+}
+
+.intro-input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  padding-left: 1em;
+  outline: none;
+}
+
+.intro-input:focus {
+  border: 1px solid hsl(248, 32%, 49%);
+}
+
+.intro-input::placeholder {
+  font-weight: 700;
+  color: hsl(249, 10%, 26%);
+}
+
+.btn {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  padding: 1em 1em;
+  text-align: center;
+  border: 1px solid hsl(154, 59%, 51%);
+  background-color: hsl(154, 59%, 51%);
+  color: #fff;
+  box-shadow: 0px 4px hsl(154, 59%, 41%);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.terms {
+  text-align: center;
+  font-size: 0.74rem;
+  color: hsl(246, 25%, 77%);
+  margin-bottom: 0;
+}
+
+.terms b {
+  color: hsl(0, 100%, 74%);
+  cursor: pointer;
+}
+
+.error {
+  display: block;
+  color: red;
+  font-size: 0.7rem;
+  padding: 0.5em 0;
+  margin-top: -1em;
+  float: right;
+}
+
+.error-icon {
+  display: none;
+  position: absolute;
+  top: 23%;
+  right: 2.5%;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-image: url(./images/bg-intro-desktop.png);
+  }
+  main {
+    flex-direction: row;
+    width: 80%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .desc {
+    text-align: left;
+  }
+
+  .desc-text {
+    width: 90%;
+  }
+
+  .desc-text h2 {
+    font-size: 3rem;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+  }
+
+  .form-section p,
+  .form-section .intro-form {
+    width: 90%;
+  }
+}
